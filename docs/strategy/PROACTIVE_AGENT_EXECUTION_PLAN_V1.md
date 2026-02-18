@@ -110,6 +110,27 @@ A reusable blueprint ensures new agents (e.g., secretary, SEO specialist) integr
 ### Phase 4 — Agent factory
 - standard blueprint onboarding and certification for new agent types.
 
+
+## What this gives us immediately
+
+As Phase 1 artifacts are introduced, organisations get immediate practical benefits:
+
+- **Consistent agent design:** each agent follows a standard operating contract.
+- **Clear accountability:** mission, scope boundaries, and ownership transfer are explicit.
+- **Safer autonomy:** role-level action limits and approval requirements are documented up front.
+- **Managed handoffs:** out-of-scope work is delegated in a structured, auditable way rather than dropped.
+- **Local-model efficiency:** role runtime defaults can be pinned to local models for cost control.
+- **Built-in learning expectations:** each role is required to produce learning evidence and improvement signals.
+- **Comparable performance measurement:** KPI definitions are standardised, enabling cross-role benchmarking.
+- **Future-ready onboarding:** new agent types can be introduced using the same contract template and governance flow.
+
+### Publication pattern (ongoing)
+OpenRook will continue to publish this style of update:
+- what capability was added,
+- what immediate operational value it unlocks,
+- what governance/safety outcomes it improves,
+- and how it supports future agent expansion.
+
 ## 11) Success criteria
 
 - Reduced repeat incident rate
