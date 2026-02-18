@@ -168,3 +168,9 @@ Our approach treats memory as an operational capability, not a transcript dump.
 - Learning is auditable at the behavior level (what improved), without disclosing private implementation mechanics.
 
 In short: we focus on compounding practical capability while keeping security and privacy boundaries intact.
+
+
+## Governance and Standards Pack
+
+- [Standards Set Index](STANDARDS_SET_INDEX.md)
+- [Governance Pack](governance/README.md)
