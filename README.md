@@ -174,4 +174,4 @@ In short: we focus on compounding practical capability while keeping security an
 
 - [Standards Set Index](governance/reference/STANDARDS_SET_INDEX.md)
 - [Governance Pack](governance/README.md)
-- [Inter-Agent Collaboration Pattern](governance/patterns/INTER_AGENT_COLLABORATION_PATTERN.md)
+- [OpenRook Inter-Agent Collaboration Model](docs/architecture/INTER_AGENT_COLLABORATION_MODEL.md)

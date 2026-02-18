@@ -1,6 +1,6 @@
-# Inter-Agent Collaboration Pattern (Public-Safe)
+# OpenRook Inter-Agent Collaboration Model (Public-Safe)
 
-This pattern defines how role-specialised agents collaborate to improve outcomes, without exposing private implementation mechanics.
+This document describes the OpenRook project operating model for how role-specialised agents collaborate to improve outcomes, without exposing private implementation mechanics.
 
 ## 1) Intent
 Agents should not operate as isolated silos. They should collaborate to:
