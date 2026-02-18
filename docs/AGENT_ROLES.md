@@ -30,3 +30,14 @@ This page summarizes the role-specialized model used in OpenRook-style OpenClaw 
 ## Notes for adopters
 
 Start with 4–5 core roles (`sentinel`, `guardian`, `builder`, `validator`, `mentor`) and expand once governance, observability, and cost controls are stable.
+
+
+## Proactive mode (intended evolution)
+
+Beyond reactive ticket/request handling, each role can run scheduled or signal-driven maintenance tasks under governance:
+- **sentinel/guardian**: continuous monitoring, risk drift detection, baseline integrity checks.
+- **builder/validator**: low-risk maintenance and validation routines when policy permits.
+- **mentor/evolutionist/critic**: continual improvement by converting recurring fixes into reusable skills.
+- **analyst/researcher**: read-only web research to refresh recommendations and patterns.
+
+This mode must remain policy-bound (budgets, risk tiers, approval gates, and auditable outputs).

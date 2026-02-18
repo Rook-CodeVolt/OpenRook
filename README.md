@@ -114,3 +114,32 @@ Initial public documentation drop. More structured docs and examples will follow
 If you are looking for agent support patterns, open an issue with context and goals:
 - `Agent support request`
 - `Feature request`
+
+
+## Proactive Autonomy Vision
+
+OpenRook is not only about responding to prompts. The intent is to operate agents as **proactive, managed-autonomy workers** for day-to-day platform operations.
+
+### Direction
+- Move from request-only operation to **continuous operational stewardship**.
+- Keep humans in control with explicit policy, risk tiers, and approval gates.
+- Prioritize local-model execution for routine/high-frequency tasks.
+
+### Managed self-learning loop
+Agents should continuously improve through a controlled loop:
+1. Observe outcomes and operational signals.
+2. Extract reusable lessons.
+3. Convert repeat patterns into skills/playbooks/checks.
+4. Validate improvements and keep audit evidence.
+
+### Browser/web intelligence policy (read-only)
+Internet access can be used for research and learning **in read-only mode**:
+- search/fetch for evidence and best practices,
+- no external posting or account actions,
+- source citation and confidence labeling,
+- policy-scoped domain allowlists.
+
+### Cost and safety constraints
+- local LLM-first for continual tasks,
+- bounded budgets and concurrency limits,
+- escalation to heavier reasoning only on threshold/risk triggers.
