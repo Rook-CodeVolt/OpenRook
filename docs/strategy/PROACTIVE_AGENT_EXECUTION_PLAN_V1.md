@@ -14,6 +14,18 @@ This document describes **what** OpenRook is implementing to move from reactive 
 
 ## 2) Operating model
 
+### 2.0 Inter-agent communication layer (mandatory)
+A managed communication layer is required between active agents so handoffs are explicit, auditable, and role-aligned.
+
+Required capabilities:
+- structured handoff packets (objective, context, constraints, risk, expected output),
+- role-aware routing (pass to best-fit agent when out-of-scope),
+- ownership transfer tracking (who owns delivery at each stage),
+- discussion trace for relevant inter-agent reasoning,
+- escalation path when no suitable role is available.
+
+This prevents dropped work and ensures "not my task" results in managed delegation, not dead ends.
+
 ### 2.1 Work lanes
 - **Hot lane:** incidents/security/high-priority reliability issues.
 - **Warm lane:** routine maintenance and operational drift correction.
