@@ -105,6 +105,9 @@ Initial public documentation drop. More structured docs and examples will follow
 
 ## Explore Next
 
+
+- [Proactive Agent Execution Plan v1](docs/strategy/PROACTIVE_AGENT_EXECUTION_PLAN_V1.md)
+- [Skill Gap Decision Template](docs/templates/SKILL_GAP_DECISION_TEMPLATE.md)
 - [Agent Roles](docs/AGENT_ROLES.md)
 - [Before vs After Improvement Matrix](docs/IMPROVEMENT_MATRIX.md)
 - [Roadmap](docs/ROADMAP.md)
