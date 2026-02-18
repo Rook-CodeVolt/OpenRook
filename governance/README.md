@@ -34,3 +34,4 @@ A practical documentation set for implementing AI and agent systems in organisat
 - `patterns/` — robust deployment patterns
 
 - `reference/` — concise summaries of key standards and frameworks
+- `patterns/INTER_AGENT_COLLABORATION_PATTERN.md` — proactive peer collaboration and handoff model
