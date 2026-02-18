@@ -172,5 +172,5 @@ In short: we focus on compounding practical capability while keeping security an
 
 ## Governance and Standards Pack
 
-- [Standards Set Index](STANDARDS_SET_INDEX.md)
+- [Standards Set Index](governance/reference/STANDARDS_SET_INDEX.md)
 - [Governance Pack](governance/README.md)

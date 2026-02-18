@@ -32,3 +32,5 @@ A practical documentation set for implementing AI and agent systems in organisat
 - `checklists/` — deployment readiness checklist
 - `mappings/` — integrated standards/control mapping
 - `patterns/` — robust deployment patterns
+
+- `reference/` — concise summaries of key standards and frameworks

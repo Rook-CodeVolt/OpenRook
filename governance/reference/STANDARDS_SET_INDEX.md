@@ -1,6 +1,9 @@
 # Standards Set Index
 
-This repository includes concise summaries of the most relevant AI governance standards/frameworks:
+This repository includes concise summaries of the most relevant AI governance standards/frameworks.
+
+Location: `governance/reference/`
+
 
 1. `01_ISO_IEC_42001_2023.md`
 2. `02_ISO_IEC_23894_2023.md`
