@@ -1,0 +1,103 @@
+# OpenRook
+
+A public overview of how we evolved an OpenClaw deployment into a robust, agent-first operating platform.
+
+> This repository intentionally shares **what** was improved, not sensitive internals, credentials, private infrastructure, or exploit details.
+
+## Why OpenRook
+
+OpenRook is a practical blueprint for teams who want dependable agent support in real operations:
+- clearer agent roles,
+- safer automation,
+- stronger reliability and observability,
+- lower run cost via local-model-first execution,
+- better operator experience.
+
+## What Was Improved
+
+### 1) Agent Architecture and Role Specialization
+We moved from generic assistant behavior to a specialized multi-agent model with explicit responsibilities.
+
+Core roles include:
+- **architect-2.0** — system design and technical decomposition
+- **builder-2.0** — implementation and delivery
+- **validator-2.0** — test design and quality validation
+- **guardian-2.0** — security and compliance posture
+- **sentinel-2.0** — monitoring, alerting, and incident detection
+- **analyst-2.0** — requirements and option analysis
+- **researcher-2.0** — deep research and innovation scans
+- **critic-2.0** — code quality and standards review
+- **evolutionist-2.0** — refactoring and optimization
+- **mentor-2.0** — documentation and knowledge transfer
+- **ml-specialist-2.0** — ML/AI implementation patterns
+- **data-specialist-2.0** — data pipelines and analytics
+- **api-specialist-2.0** — integration and API lifecycle
+
+### 2) Auditable Agent Learning and Feedback Use
+We established a fail-closed standard for agent outputs so learning is verifiable:
+- explicit feedback usage markers,
+- applied-learning traces,
+- structured handoff context,
+- improved accountability between agent turns.
+
+### 3) Local-Model-First Heavy Lifting
+We aligned agent execution toward local infrastructure (LM Studio first) to reduce external token dependence while keeping quality high.
+
+### 4) Pipeline and Orchestration Maturity
+We introduced stronger task orchestration and execution flow discipline:
+- unified project/task pipeline patterns,
+- cleaner delegation/handoff behaviors,
+- better sub-agent usage boundaries,
+- stronger operational controls.
+
+### 5) Reliability and Safety Hardening
+Key reliability and risk-control improvements include:
+- safer environment-aware API handling,
+- reduction of brittle localhost assumptions,
+- durability improvements for stored assets,
+- better drift and availability handling,
+- stronger operational recovery posture.
+
+### 6) Memory and Context Efficiency
+Memory and context flow was improved to reduce waste and improve continuity:
+- compact recall patterns,
+- memory optimization loops,
+- cleaner context gating for higher-signal agent decisions.
+
+### 7) Skills and Reuse Foundation
+We started a reusable skills fabric so repeated high-value work can be converted into sharable, repeatable capability rather than re-solved ad hoc.
+
+### 8) Operator-Facing Reporting and Decision Clarity
+Daily briefing/reporting quality was upgraded to include clearer sections on:
+- what was completed,
+- what is currently true,
+- what remains outstanding,
+- what should happen next.
+
+## Security and Privacy Principles
+OpenRook publishes **capability and architecture patterns**, not sensitive details.
+
+Not included:
+- secrets/tokens/keys,
+- private hostnames or credential paths,
+- exploitable low-level hardening specifics,
+- private logs or personal data.
+
+## Who This Is For
+- teams deploying OpenClaw in production-like environments,
+- builders exploring role-specialized agent operations,
+- operators seeking safer automation with strong oversight,
+- contributors interested in practical multi-agent governance.
+
+## Contributing
+Open to issues and discussion from teams working on real-world agent operations.
+
+Suggested contribution themes:
+- role design patterns,
+- observability and auditability,
+- safe autonomy controls,
+- cost/performance optimization,
+- maintenance automation and continuous improvement loops.
+
+## Status
+Initial public documentation drop. More structured docs and examples will follow.
