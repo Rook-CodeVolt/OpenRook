@@ -19,7 +19,7 @@ Applies to all local and external models used by AI/agent systems.
 - safety policy adherence,
 - latency and throughput,
 - cost efficiency,
-- failure-mode behavior.
+- failure-mode behaviour.
 
 ## 5) Minimum acceptance criteria (example)
 - quality >= target threshold for primary tasks,
@@ -47,7 +47,7 @@ Retire or demote model when:
 - unacceptable risk/cost profile,
 - unsupported or insecure dependency chain.
 
-## 9) Documentation artifacts
+## 9) Documentation artefacts
 - model card/system card,
 - evaluation report,
 - risk register linkage,

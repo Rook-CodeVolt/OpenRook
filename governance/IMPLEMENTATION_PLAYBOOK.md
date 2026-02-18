@@ -47,8 +47,8 @@
 - approval compliance high,
 - stable reliability/cost profile.
 
-## Phase 5 — Optimize and learn
-1. Promote recurring fixes into reusable artifacts.
+## Phase 5 — Optimise and learn
+1. Promote recurring fixes into reusable artefacts.
 2. Tune model routing and policies.
 3. Retire ineffective controls/models.
 4. Report outcomes quarterly.

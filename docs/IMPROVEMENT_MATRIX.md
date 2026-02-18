@@ -10,7 +10,7 @@ A high-level comparison of platform posture before and after OpenRook-style hard
 | Reliability | fragmented checks | clearer pipeline and monitoring posture |
 | Asset durability | mixed persistence patterns | durable backend-centric persistence patterns |
 | Environment handling | environment-specific assumptions | stronger environment-safe routing patterns |
-| Context/memory | high drift risk | compact recall and memory optimization loops |
+| Context/memory | high drift risk | compact recall and memory optimisation loops |
 | Reporting | variable quality | structured operator-ready daily briefing patterns |
 | Security posture | periodic/manual | stronger continuous guardrail and hardening stance |
 | Reuse of knowledge | repeated rework | growing skills/playbook foundation |

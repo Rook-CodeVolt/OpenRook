@@ -42,7 +42,7 @@ You are moving from manual/assistive AI to proactive autonomous agents.
 ## Pattern 2: Environment Segregation (Dev/Test/Prod)
 
 ### Goal
-Prevent uncontrolled promotion of unsafe AI/agent behavior.
+Prevent uncontrolled promotion of unsafe AI/agent behaviour.
 
 ### Use when
 Deploying AI/agent capabilities in production-like systems.
@@ -56,10 +56,10 @@ Deploying AI/agent capabilities in production-like systems.
 - Separate credentials and secrets per environment
 - Separate model endpoints/keys where applicable
 - Promotion gates (test + security + approval)
-- Immutable deployment artifacts
+- Immutable deployment artefacts
 
 ### Evidence of compliance
-- Promotion checklist artifacts
+- Promotion checklist artefacts
 - Change tickets with approvals
 - Segregated access review records
 
@@ -68,7 +68,7 @@ Deploying AI/agent capabilities in production-like systems.
 ## Pattern 3: Policy-Enforced Action Boundaries
 
 ### Goal
-Ensure agents act only within explicitly authorized limits.
+Ensure agents act only within explicitly authorised limits.
 
 ### Use when
 Agents can access tools, integrations, or execution environments.
@@ -196,7 +196,7 @@ The same classes of incidents/tasks repeat.
 
 ### Required controls
 - Learning promotion criteria (e.g., repeat threshold)
-- Review/approval of new reusable artifacts
+- Review/approval of new reusable artefacts
 - Versioning and rollback for learned automations
 
 ### Evidence of compliance

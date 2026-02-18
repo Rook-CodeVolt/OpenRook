@@ -47,7 +47,7 @@
 ### 2.7 Resilience controls
 - tested backup/restore
 - disaster recovery objectives (RTO/RPO)
-- graceful degradation and fail-safe behavior
+- graceful degradation and fail-safe behaviour
 - kill switch for autonomous workflows
 
 ## 3) Control testing approach

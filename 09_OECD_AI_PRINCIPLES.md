@@ -4,7 +4,7 @@
 A globally influential policy baseline for responsible AI.
 
 ## What it covers
-- Inclusive growth and human-centered values
+- Inclusive growth and human-centred values
 - Transparency and robustness
 - Accountability and responsible stewardship
 

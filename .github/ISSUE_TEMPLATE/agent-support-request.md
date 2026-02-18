@@ -22,4 +22,4 @@ What good looks like for your team?
 Security, cost, compliance, tooling, or timeline constraints.
 
 ## Evidence
-Logs, screenshots, or artifacts (redacted as needed).
+Logs, screenshots, or artefacts (redacted as needed).

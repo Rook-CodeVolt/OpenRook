@@ -25,7 +25,7 @@ We want agents that improve over time without becoming noisy, brittle, or unsafe
 
 5. **Privacy and safety by default**
    - Sensitive data handling is minimized and policy-bound.
-   - Public artifacts describe outcomes and patterns, not private internals.
+   - Public artefacts describe outcomes and patterns, not private internals.
 
 ## Learning lifecycle (public model)
 
@@ -33,14 +33,14 @@ We want agents that improve over time without becoming noisy, brittle, or unsafe
 2. **Extract** — identify what changed performance or reliability.
 3. **Codify** — convert repeatable insights into reusable operational assets.
 4. **Validate** — test whether codified learning actually improves results.
-5. **Evolve** — keep, refine, or retire learning artifacts based on evidence.
+5. **Evolve** — keep, refine, or retire learning artefacts based on evidence.
 
 ## What this enables
 
 - Better continuity across tasks and handoffs.
 - Less repeated troubleshooting.
 - Higher quality autonomous day-to-day operations.
-- Safer proactive behavior under governance.
+- Safer proactive behaviour under governance.
 
 ## What we do not publish
 

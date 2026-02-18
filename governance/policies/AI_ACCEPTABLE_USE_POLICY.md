@@ -13,7 +13,7 @@ Applies to:
 - **Policy Owner:** approves and maintains this policy.
 - **System Owner:** ensures implementation and evidence.
 - **Security/Compliance:** monitors control adherence.
-- **Users/Operators:** use AI/agents within authorized boundaries.
+- **Users/Operators:** use AI/agents within authorised boundaries.
 
 ## 4) Permitted use
 - Approved business workflows and documented use cases.

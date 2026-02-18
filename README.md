@@ -16,7 +16,7 @@ OpenRook is a practical blueprint for teams who want dependable agent support in
 ## What Was Improved
 
 ### 1) Agent Architecture and Role Specialization
-We moved from generic assistant behavior to a specialized multi-agent model with explicit responsibilities.
+We moved from generic assistant behaviour to a specialized multi-agent model with explicit responsibilities.
 
 Core roles include:
 - **architect-2.0** — system design and technical decomposition
@@ -27,7 +27,7 @@ Core roles include:
 - **analyst-2.0** — requirements and option analysis
 - **researcher-2.0** — deep research and innovation scans
 - **critic-2.0** — code quality and standards review
-- **evolutionist-2.0** — refactoring and optimization
+- **evolutionist-2.0** — refactoring and optimisation
 - **mentor-2.0** — documentation and knowledge transfer
 - **ml-specialist-2.0** — ML/AI implementation patterns
 - **data-specialist-2.0** — data pipelines and analytics
@@ -46,7 +46,7 @@ We aligned agent execution toward local infrastructure (LM Studio first) to redu
 ### 4) Pipeline and Orchestration Maturity
 We introduced stronger task orchestration and execution flow discipline:
 - unified project/task pipeline patterns,
-- cleaner delegation/handoff behaviors,
+- cleaner delegation/handoff behaviours,
 - better sub-agent usage boundaries,
 - stronger operational controls.
 
@@ -61,7 +61,7 @@ Key reliability and risk-control improvements include:
 ### 6) Memory and Context Efficiency
 Memory and context flow was improved to reduce waste and improve continuity:
 - compact recall patterns,
-- memory optimization loops,
+- memory optimisation loops,
 - cleaner context gating for higher-signal agent decisions.
 
 ### 7) Skills and Reuse Foundation
@@ -96,7 +96,7 @@ Suggested contribution themes:
 - role design patterns,
 - observability and auditability,
 - safe autonomy controls,
-- cost/performance optimization,
+- cost/performance optimisation,
 - maintenance automation and continuous improvement loops.
 
 ## Status
@@ -151,7 +151,7 @@ Internet access can be used for research and learning **in read-only mode**:
 
 Our approach treats memory as an operational capability, not a transcript dump.
 
-### What we optimize for
+### What we optimise for
 - **Continuity:** agents should remember enough to avoid repeating work.
 - **Signal quality:** promote durable, high-value facts over noisy one-off chatter.
 - **Actionability:** memory should improve decision quality and task execution.
@@ -164,8 +164,8 @@ Our approach treats memory as an operational capability, not a transcript dump.
 
 ### Guardrails
 - Memory is policy-scoped and privacy-aware.
-- Sensitive details are minimized/redacted in public-facing artifacts.
-- Learning is auditable at the behavior level (what improved), without disclosing private implementation mechanics.
+- Sensitive details are minimized/redacted in public-facing artefacts.
+- Learning is auditable at the behaviour level (what improved), without disclosing private implementation mechanics.
 
 In short: we focus on compounding practical capability while keeping security and privacy boundaries intact.
 

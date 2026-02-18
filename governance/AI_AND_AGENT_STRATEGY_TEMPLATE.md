@@ -27,8 +27,8 @@
 - low-risk deployments + evidence capture
 ### Scale (6–12 months)
 - broader use-case rollout + automation controls
-### Optimize (12+ months)
-- continual learning, cost/performance optimization
+### Optimise (12+ months)
+- continual learning, cost/performance optimisation
 
 ## 6) Risk and control strategy
 - Top risk categories:

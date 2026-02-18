@@ -9,4 +9,4 @@ A binding EU regulation defining legal obligations for AI systems based on risk.
 - Transparency and compliance requirements
 
 ## Why it matters
-Mandatory for in-scope organizations and relevant for global providers serving EU users/markets.
+Mandatory for in-scope organisations and relevant for global providers serving EU users/markets.

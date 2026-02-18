@@ -17,7 +17,7 @@
 - **Monthly governance council:** policy exceptions, control health
 - **Quarterly executive review:** strategic risk, investment, roadmap
 
-## 3. Core governance artifacts
+## 3. Core governance artefacts
 - AI strategy and scope statement
 - AI/agent inventory with owners and criticality
 - risk register with treatment plans

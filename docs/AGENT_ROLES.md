@@ -14,10 +14,10 @@ This page summarizes the role-specialized model used in OpenRook-style OpenClaw 
 | analyst-2.0 | Requirement and option analysis | ambiguous requests, planning phases | option analysis, feasibility notes |
 | researcher-2.0 | Deep research and innovation | unknown domains, strategic exploration | comparative research, recommendations |
 | critic-2.0 | Code quality and standards | code review events, quality sweeps | review feedback, refactor priorities |
-| evolutionist-2.0 | Refactoring and optimization | performance debt, maintainability issues | optimization plans, modernization changes |
+| evolutionist-2.0 | Refactoring and optimisation | performance debt, maintainability issues | optimisation plans, modernization changes |
 | mentor-2.0 | Documentation and knowledge transfer | handoffs, onboarding, repeatable patterns | docs, runbooks, skill definitions |
 | ml-specialist-2.0 | ML/AI implementation | model tasks, inference/training design | ML architecture and delivery guidance |
-| data-specialist-2.0 | Data pipelines and analytics | ETL/reporting/data quality work | pipelines, metrics/reporting artifacts |
+| data-specialist-2.0 | Data pipelines and analytics | ETL/reporting/data quality work | pipelines, metrics/reporting artefacts |
 | api-specialist-2.0 | API design and integration | integration projects, API lifecycle tasks | API contracts, integration implementations |
 
 ## Operating principles

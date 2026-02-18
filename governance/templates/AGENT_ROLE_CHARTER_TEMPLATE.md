@@ -19,7 +19,7 @@ Clear purpose and expected outcomes.
 - Scheduled triggers:
 - Manual triggers:
 
-## 5) Authorized behavior
+## 5) Authorised behaviour
 - Allowed autonomous actions:
 - Actions requiring approval:
 - Prohibited actions:
@@ -35,7 +35,7 @@ Clear purpose and expected outcomes.
 - Rollback/safe-stop conditions:
 
 ## 8) Evidence requirements
-- Required logs/artifacts:
+- Required logs/artefacts:
 - Reporting cadence:
 - KPI contribution:
 

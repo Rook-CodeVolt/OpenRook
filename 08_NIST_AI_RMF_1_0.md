@@ -6,7 +6,7 @@ A practical risk-management framework for trustworthy AI.
 ## What it covers
 - Govern, Map, Measure, Manage functions
 - Socio-technical risk and impact thinking
-- Implementation guidance for organizations
+- Implementation guidance for organisations
 
 ## Why it matters
 Widely adopted, implementation-friendly companion to ISO standards.

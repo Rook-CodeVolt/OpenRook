@@ -1,6 +1,6 @@
-# Governance Pack for AI + Agents (Organization-Ready)
+# Governance Pack for AI + Agents (Organisation-Ready)
 
-A practical documentation set for implementing AI and agent systems in organizations of any size.
+A practical documentation set for implementing AI and agent systems in organisations of any size.
 
 ## What this pack includes
 - Strategy and implementation guidance
