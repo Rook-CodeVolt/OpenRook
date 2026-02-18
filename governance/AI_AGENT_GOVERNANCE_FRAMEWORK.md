@@ -1,41 +1,63 @@
 # AI and Agent Governance Framework
 
 ## 1. Governance objectives
-- Enable safe, effective AI/agent adoption
-- Protect confidentiality, integrity, availability, and compliance
-- Ensure accountability, transparency, and human oversight
-- Drive continual improvement and measurable value
+- Safe, lawful, and value-driven AI/agent adoption
+- Clear accountability and decision rights
+- Risk-managed autonomy with human oversight
+- Measurable continual improvement
 
-## 2. Governance layers
-1. **Board/Executive oversight** — risk appetite, strategic direction
-2. **Policy authority** — standards, approvals, exceptions
-3. **Operational control** — implementation, monitoring, incident response
-4. **Assurance** — audit, testing, control effectiveness review
+## 2. Governance operating model
+### 2.1 Three lines of accountability
+1. **Business/System owners** — accountable for outcomes and risk acceptance
+2. **Risk/Security/Compliance** — define controls and independent challenge
+3. **Assurance/Internal audit** — verify design and operating effectiveness
 
-## 3. Minimum governance artifacts
+### 2.2 Governance forums
+- **Weekly AI operations forum:** incidents, metrics, approvals
+- **Monthly governance council:** policy exceptions, control health
+- **Quarterly executive review:** strategic risk, investment, roadmap
+
+## 3. Core governance artifacts
 - AI strategy and scope statement
-- AI/agent inventory and ownership register
-- Risk register and treatment plans
-- Model and agent evaluation records
-- Approval logs for high-risk autonomous actions
-- Incident and post-incident learning records
+- AI/agent inventory with owners and criticality
+- risk register with treatment plans
+- model/agent evaluation evidence
+- autonomy approval matrix and logs
+- incident and post-incident reviews
 
-## 4. Oversight forums
-- Monthly AI governance council
-- Weekly AI operations review
-- Quarterly executive risk review
+## 4. Lifecycle governance gates
+1. Intake and risk classification
+2. Design and threat/risk assessment
+3. Build and controlled validation
+4. Deployment approval
+5. Runtime monitoring and incident handling
+6. Change/release and retirement governance
 
-## 5. Lifecycle control points
-- Intake and classification
-- Design/risk assessment
-- Build and validation
-- Deployment approval
-- Runtime monitoring
-- Change management and retirement
-
-## 6. Required control themes
-- Identity/access and least privilege
+## 5. Control domains
+- Governance, policy, and accountability
 - Data governance and privacy
-- Prompt/tool/action safety controls
-- Monitoring, logging, and audit trail
-- Resilience, recovery, and continuity
+- Identity and access management
+- Agent/tool action safety and approval
+- Logging/monitoring and auditability
+- Resilience, continuity, and recovery
+- Third-party and supply-chain assurance
+
+## 6. Minimum required controls
+- Role-based access with least privilege
+- Segregated environments and credentials
+- Risk-tiered autonomy controls
+- Approval workflows for non-low-risk actions
+- Tamper-evident logging and retention
+- Backup/restore runbooks and tested recovery
+
+## 7. KPI model (example)
+- % governed AI/agent systems in inventory
+- % high-risk actions with explicit approval evidence
+- incident rate and MTTR for agent-enabled workflows
+- policy exception volume and age
+- control test pass rate
+
+## 8. Continuous improvement
+- recurring issue classes converted into reusable controls/skills
+- periodic policy and control tuning
+- lessons learned integrated into playbooks/templates

@@ -24,3 +24,11 @@ A practical documentation set for implementing AI and agent systems in organizat
 - `patterns/ROBUST_DEPLOYMENT_PATTERNS.md`
 - `templates/AI_SYSTEM_CARD_TEMPLATE.md`
 - `templates/AGENT_ROLE_CHARTER_TEMPLATE.md`
+
+
+## Detailed templates and controls
+- `policies/` — policy templates with governance clauses
+- `templates/` — system card and agent charter templates
+- `checklists/` — deployment readiness checklist
+- `mappings/` — integrated standards/control mapping
+- `patterns/` — robust deployment patterns

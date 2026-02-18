@@ -1,42 +1,64 @@
 # Security Considerations and Recommended Controls
 
-## Core threats
-- unauthorized data access/exfiltration
-- prompt/tool abuse and unsafe actions
-- model misuse/hallucination-driven actions
-- privilege escalation through integrations
-- supply-chain and dependency risks
+## 1) Threat categories
+- Unauthorized access and privilege misuse
+- Data leakage/exfiltration
+- Prompt/tool abuse and unsafe automation
+- Dependency/supply-chain compromise
+- Availability disruption and resilience failures
 
-## Recommended controls
+## 2) Security control framework
 
-### Access and identity
-- SSO/MFA for operator/admin roles
-- least-privilege RBAC for tools and integrations
-- scoped service credentials and key rotation
+### 2.1 Governance controls
+- security ownership for each AI/agent system
+- risk assessments before production deployment
+- formal exception handling with expiry
 
-### Data protection
-- data classification and minimization
-- encryption in transit and at rest
-- DLP controls for sensitive outputs
+### 2.2 Identity and access controls
+- RBAC + least privilege
+- MFA for privileged operators
+- just-in-time access for high-risk operations
+- periodic access recertification
 
-### Agent/action safety
-- risk-tiered autonomy with approval gates
-- action allowlists/denylists
-- outbound channel restrictions
-- read-only web mode for research agents
+### 2.3 Data security controls
+- data classification and handling rules
+- encryption in transit/at rest
+- masking/redaction for sensitive attributes
+- retention and disposal controls
 
-### Monitoring and assurance
-- centralized logs with tamper-evident retention
-- anomaly detection and alerting
-- regular control effectiveness testing
-- incident response with post-mortems
+### 2.4 Application/agent safety controls
+- tool allowlist and denylist by role
+- autonomy tier enforcement
+- approval gates for higher-risk actions
+- safe defaults + explicit user intent checks
 
-### Resilience
-- tested backups and recovery runbooks
-- dependency monitoring and patching
-- fail-safe defaults and kill switches
+### 2.5 Infrastructure controls
+- environment isolation
+- hardened runtime configuration
+- patch/vulnerability management
+- secret lifecycle management
 
-## Enforcement patterns
-- policy-as-code where possible
-- mandatory pre-deploy security checklist
-- periodic attestation by system owners
+### 2.6 Detection and response controls
+- centralized telemetry and SIEM integration (where available)
+- anomaly detection and alert routing
+- incident triage and response runbooks
+- post-incident review and control updates
+
+### 2.7 Resilience controls
+- tested backup/restore
+- disaster recovery objectives (RTO/RPO)
+- graceful degradation and fail-safe behavior
+- kill switch for autonomous workflows
+
+## 3) Control testing approach
+- pre-deploy checks,
+- periodic control effectiveness tests,
+- tabletop scenarios,
+- red-team style adversarial testing where appropriate.
+
+## 4) Minimum recommended baseline
+- MFA + least privilege
+- approval gates for medium/high risk actions
+- immutable audit logs
+- regular patching and vuln scans
+- tested recovery runbooks

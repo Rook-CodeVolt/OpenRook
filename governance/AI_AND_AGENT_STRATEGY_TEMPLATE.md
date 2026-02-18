@@ -1,31 +1,51 @@
 # AI and Agent Strategy Template
 
-## Vision
-Define how AI and agents advance organizational outcomes.
+## 1) Strategic intent
+- Vision:
+- Business outcomes:
+- Time horizon:
 
-## Target outcomes (12–24 months)
-- Outcome 1:
-- Outcome 2:
-- Outcome 3:
+## 2) Scope and principles
+- In scope:
+- Out of scope:
+- Guiding principles (e.g., safety, privacy, human oversight, cost discipline):
 
-## Priority use cases
-| Use case | Value | Risk class | Owner | Timeline |
-|---|---|---|---|---|
+## 3) Value hypothesis and use-case portfolio
+| Use case | Business value | Risk class | Owner | Success metric | Phase |
+|---|---|---|---|---|---|
 
-## Operating model decisions
-- Centralized vs federated governance:
-- Local-model vs cloud-model posture:
+## 4) Target operating model
+- Governance structure:
+- Central vs federated delivery model:
 - Human-in-the-loop boundaries:
-- Build vs buy criteria:
+- Local-model/cloud strategy:
 
-## Capability roadmap
-- Foundation (policy, inventory, controls)
-- Pilot (low-risk internal workflows)
-- Scale (cross-functional adoption)
-- Optimize (automation + learning loops)
+## 5) Capability roadmap
+### Foundation (0–3 months)
+- governance, policy, inventory, baseline controls
+### Pilot (3–6 months)
+- low-risk deployments + evidence capture
+### Scale (6–12 months)
+- broader use-case rollout + automation controls
+### Optimize (12+ months)
+- continual learning, cost/performance optimization
 
-## Metrics
-- adoption and value realization
-- incident rates and mitigation time
-- control coverage and audit outcomes
-- cost efficiency per successful outcome
+## 6) Risk and control strategy
+- Top risk categories:
+- Control priorities:
+- Approval and exception process:
+
+## 7) Investment and resources
+- Team roles:
+- Budget assumptions:
+- Tooling/platform requirements:
+
+## 8) Measurement and reporting
+- Value KPIs:
+- Risk KPIs:
+- Operational KPIs:
+- Governance KPIs:
+
+## 9) Decision log
+| Date | Decision | Owner | Rationale | Review date |
+|---|---|---|---|---|

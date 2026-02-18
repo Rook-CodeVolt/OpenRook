@@ -1,22 +1,47 @@
 # AI System Card Template
 
-## System overview
+## 1) System identity
 - Name:
-- Owner:
-- Purpose:
-- Scope:
+- Version:
+- Owner(s):
+- Environment(s):
 
-## Data and integrations
-- Input data classes:
+## 2) Purpose and scope
+- Primary objective:
+- Intended users:
+- In-scope tasks:
+- Out-of-scope tasks:
+
+## 3) Data profile
+- Input data categories:
+- Sensitive data handling:
 - Output channels:
-- External integrations:
+- Retention policy:
 
-## Risk and controls
+## 4) Model profile
+- Model(s) used:
+- Routing policy (local/cloud/escalation):
+- Known limitations:
+- Safety constraints:
+
+## 5) Risk and controls
 - Risk classification:
-- Key controls:
+- Key controls implemented:
+- Autonomy tier:
 - Approval requirements:
 
-## Evaluation
-- Baseline metrics:
-- Failure modes:
-- Monitoring plan:
+## 6) Evaluation and performance
+- Baseline evaluation date:
+- Quality metrics:
+- Safety metrics:
+- Latency/cost metrics:
+
+## 7) Monitoring and operations
+- Alerting thresholds:
+- Incident response owner:
+- Backup/rollback strategy:
+- Review cadence:
+
+## 8) Compliance mapping
+- Relevant standards/regulations:
+- Control evidence references:
