@@ -108,6 +108,7 @@ Initial public documentation drop. More structured docs and examples will follow
 - [Agent Roles](docs/AGENT_ROLES.md)
 - [Before vs After Improvement Matrix](docs/IMPROVEMENT_MATRIX.md)
 - [Roadmap](docs/ROADMAP.md)
+- [Autonomy Policy Template](docs/templates/AUTONOMY_POLICY_TEMPLATE.md)
 
 ## Community Input
 
