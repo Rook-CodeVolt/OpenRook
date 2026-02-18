@@ -109,6 +109,7 @@ Initial public documentation drop. More structured docs and examples will follow
 - [Before vs After Improvement Matrix](docs/IMPROVEMENT_MATRIX.md)
 - [Roadmap](docs/ROADMAP.md)
 - [Autonomy Policy Template](docs/templates/AUTONOMY_POLICY_TEMPLATE.md)
+- [Memory & Learning Approach (Public Summary)](docs/MEMORY_AND_LEARNING_APPROACH.md)
 
 ## Community Input
 
@@ -144,3 +145,26 @@ Internet access can be used for research and learning **in read-only mode**:
 - local LLM-first for continual tasks,
 - bounded budgets and concurrency limits,
 - escalation to heavier reasoning only on threshold/risk triggers.
+
+
+## Memory, Learning, and Improvement (High-Level)
+
+Our approach treats memory as an operational capability, not a transcript dump.
+
+### What we optimize for
+- **Continuity:** agents should remember enough to avoid repeating work.
+- **Signal quality:** promote durable, high-value facts over noisy one-off chatter.
+- **Actionability:** memory should improve decision quality and task execution.
+
+### How learning works (without exposing internals)
+- Capture outcomes from completed work and incidents.
+- Distill reusable lessons into concise operational knowledge.
+- Route those lessons into role-appropriate skills, checks, and playbooks.
+- Re-validate over time so learning stays useful and current.
+
+### Guardrails
+- Memory is policy-scoped and privacy-aware.
+- Sensitive details are minimized/redacted in public-facing artifacts.
+- Learning is auditable at the behavior level (what improved), without disclosing private implementation mechanics.
+
+In short: we focus on compounding practical capability while keeping security and privacy boundaries intact.
