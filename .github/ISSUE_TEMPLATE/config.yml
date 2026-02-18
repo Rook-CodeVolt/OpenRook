@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: OpenRook discussions
+    url: https://github.com/Rook-CodeVolt/OpenRook/discussions
+    about: Ask open questions and share ideas with the community.

@@ -101,3 +101,16 @@ Suggested contribution themes:
 
 ## Status
 Initial public documentation drop. More structured docs and examples will follow.
+
+
+## Explore Next
+
+- [Agent Roles](docs/AGENT_ROLES.md)
+- [Before vs After Improvement Matrix](docs/IMPROVEMENT_MATRIX.md)
+- [Roadmap](docs/ROADMAP.md)
+
+## Community Input
+
+If you are looking for agent support patterns, open an issue with context and goals:
+- `Agent support request`
+- `Feature request`
