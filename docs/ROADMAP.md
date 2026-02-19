@@ -18,6 +18,7 @@ This roadmap is intentionally practical and operator-oriented.
 
 
 ## Phase 2.5 — Proactive autonomy and managed learning
+- [ ] Autonomous skill development system (idle-to-training + validation gates)
 - [ ] Define proactive agent operating contract (from reactive-only to mixed proactive/reactive)
 - [ ] Implement managed self-learning lifecycle (observe → codify → validate → reuse)
 - [ ] Add read-only web research policy with allowlisted sources per agent role

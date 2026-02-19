@@ -49,6 +49,14 @@ Each new agent should include:
 - KPI and evidence mapping,
 - shadow-mode promotion criteria.
 
+
+
+### 7) Autonomous skill development (role-targeted)
+- Agents should enter approved training mode when idle.
+- Training should be role-aligned, validated, and evidence-backed.
+- Promoted skills should improve future execution quality.
+- Training must remain bounded by safety, budget, and concurrency controls.
+
 ## Delivery intent
 This model is delivered in phases:
 1. Governance and policy baseline
