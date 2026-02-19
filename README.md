@@ -118,6 +118,7 @@ Initial public documentation drop. More structured docs and examples will follow
 - [Drift Guard Value Note (2026-02-19)](docs/operations/DRIFT_GUARD_VALUE_NOTE_2026-02-19.md)
 - [Delivery Discipline Note (2026-02-19)](docs/operations/DELIVERY_DISCIPLINE_NOTE_2026-02-19.md)
 - [Dashboard Evidence Alignment Note (2026-02-19)](docs/operations/DASHBOARD_EVIDENCE_ALIGNMENT_NOTE_2026-02-19.md)
+- [Drift Guard Monitoring Note (2026-02-19)](docs/operations/DRIFT_GUARD_MONITORING_NOTE_2026-02-19.md)
 - [Autonomy Policy Template](docs/templates/AUTONOMY_POLICY_TEMPLATE.md)
 - [Memory & Learning Approach (Public Summary)](docs/MEMORY_AND_LEARNING_APPROACH.md)
 
