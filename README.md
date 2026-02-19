@@ -113,6 +113,7 @@ Initial public documentation drop. More structured docs and examples will follow
 - [Agent Roles](docs/AGENT_ROLES.md)
 - [Before vs After Improvement Matrix](docs/IMPROVEMENT_MATRIX.md)
 - [Roadmap](docs/ROADMAP.md)
+- [Operations Reliability Note (2026-02-19)](docs/operations/OPS_RELIABILITY_NOTE_2026-02-19.md)
 - [Autonomy Policy Template](docs/templates/AUTONOMY_POLICY_TEMPLATE.md)
 - [Memory & Learning Approach (Public Summary)](docs/MEMORY_AND_LEARNING_APPROACH.md)
 
