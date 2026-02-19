@@ -6,6 +6,7 @@ This roadmap is intentionally practical and operator-oriented.
 - [x] Public overview of implementation improvements
 - [x] Agent role breakdown and scope
 - [x] Before/after improvement matrix
+- [x] Unified proactive model published (`docs/strategy/PROACTIVE_AGENT_MODEL_V1_PUBLIC.md`)
 - [ ] Add examples of safe automation boundaries
 - [ ] Add baseline observability checklist for adopters
 

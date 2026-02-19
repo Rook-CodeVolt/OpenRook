@@ -107,6 +107,7 @@ Initial public documentation drop. More structured docs and examples will follow
 
 - [Agent Operating Contracts Overview](docs/architecture/AGENT_OPERATING_CONTRACTS_OVERVIEW.md)
 
+- [Proactive Agent Model v1 (Public)](docs/strategy/PROACTIVE_AGENT_MODEL_V1_PUBLIC.md)
 - [Proactive Agent Execution Plan v1](docs/strategy/PROACTIVE_AGENT_EXECUTION_PLAN_V1.md)
 - [Skill Gap Decision Template](docs/templates/SKILL_GAP_DECISION_TEMPLATE.md)
 - [Agent Roles](docs/AGENT_ROLES.md)
