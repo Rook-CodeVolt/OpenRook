@@ -113,6 +113,7 @@ Initial public documentation drop. More structured docs and examples will follow
 - [Agent Roles](docs/AGENT_ROLES.md)
 - [Before vs After Improvement Matrix](docs/IMPROVEMENT_MATRIX.md)
 - [Roadmap](docs/ROADMAP.md)
+- [Planned Agent Capability Expansion (2026-02-20)](docs/PLANNED_AGENT_CAPABILITY_EXPANSION_2026-02-20.md)
 - [Dashboard Evidence Alignment Note (2026-02-19)](docs/operations/DASHBOARD_EVIDENCE_ALIGNMENT_NOTE_2026-02-19.md)
 - [Handoff Governance Alignment Note (2026-02-19)](docs/operations/HANDOFF_GOVERNANCE_ALIGNMENT_NOTE_2026-02-19.md)
 - [Autonomy Policy Template](docs/templates/AUTONOMY_POLICY_TEMPLATE.md)

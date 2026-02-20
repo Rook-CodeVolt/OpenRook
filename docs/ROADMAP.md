@@ -30,5 +30,12 @@ This roadmap is intentionally practical and operator-oriented.
 - [ ] Starter governance profile for production-like use
 - [ ] Contribution-driven role and policy refinements
 
+## Phase 3.5 — Collaboration, memory, and queue governance
+- [ ] Publish inter-agent communication lifecycle (public protocol view)
+- [ ] Publish tiered memory model (episode / working / durable knowledge)
+- [ ] Publish confidence/freshness memory governance guidance
+- [ ] Publish local-model queue governance and fairness guidance
+- [ ] Publish collaboration KPI starter set (assist latency/success/risk-prevention)
+
 ## Non-goals
 - Publishing secrets, sensitive infrastructure details, or exploit-level implementation specifics.
