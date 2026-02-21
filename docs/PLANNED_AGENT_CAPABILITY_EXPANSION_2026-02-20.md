@@ -74,3 +74,7 @@ Reference reviewed: `abhi1693/openclaw-mission-control`.
 ### Non-adoption / caution
 - Do not copy repo-specific stack choices blindly (FastAPI/Next/Redis/Postgres) unless they fit our runtime and ops cost constraints.
 - Reuse concepts and control patterns first; implement in our existing platform architecture.
+
+## Execution tracking
+Detailed execution checklist and acceptance evidence plan:
+- `OpenRook/docs/MISSION_CONTROL_REUSE_EXECUTION_CHECKLIST_2026-02-21.md`
