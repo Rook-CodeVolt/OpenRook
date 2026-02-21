@@ -84,3 +84,9 @@ Acceptance evidence:
 1. Implement readiness precheck script and log format.
 2. Implement stale-process/noise detector script with thresholds.
 3. Add evidence block template to completion flow.
+
+## Dashboard physicalization of capability proof (added)
+- Add a Capability Proof Scorecard panel (readiness score + gate status).
+- Add Learning/Independence/Collaboration proof panels sourced from evidence files.
+- Add Governance & Release Gate panel with blocker reasons.
+- Add Approval Queue + proof activity timeline panel for operator workflow.
