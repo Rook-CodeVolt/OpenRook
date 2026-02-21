@@ -70,6 +70,7 @@ Reference reviewed: `abhi1693/openclaw-mission-control`.
 - **Phase 2:** map current execution queue/task objects to board/board-group abstractions.
 - **Phase 3:** consolidate gateway operations into a single control-plane workflow with explicit state checks.
 - **Phase 4:** adopt installer/bootstrap validation patterns for local reliability.
+- **Phase 5:** apply dashboard UX patterns (KPI strip, scoped filters, activity feed, global approvals queue, health badge).
 
 ### Non-adoption / caution
 - Do not copy repo-specific stack choices blindly (FastAPI/Next/Redis/Postgres) unless they fit our runtime and ops cost constraints.

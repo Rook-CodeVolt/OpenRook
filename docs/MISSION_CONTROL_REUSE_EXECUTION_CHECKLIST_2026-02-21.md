@@ -10,6 +10,33 @@ Scope: Reuse relevant ideas from `abhi1693/openclaw-mission-control` without rec
 5. Bootstrap validation checklist before runtime start.
 6. Local/self-host auth mode clarity (cost and security aware).
 
+## Dashboard ideas considered (and selected for reuse)
+From Mission Control frontend (`/dashboard`, `/activity`, `/approvals`, sidebar/nav model):
+
+1. **KPI strip with operational primitives** — adopt
+- Active agents, tasks-in-progress, error-rate, cycle-time style headline cards.
+
+2. **Time-range + scope filters** — adopt
+- Global range selector plus group/board scope filter model.
+
+3. **Multi-chart operational panel** — adopt
+- Throughput, cycle-time, error trend, status-distribution views.
+
+4. **Live activity feed panel** — adopt
+- Real-time event timeline with loading/empty/error states.
+
+5. **Global approvals queue page** — adopt
+- Cross-board pending approvals list with approve/reject actions.
+
+6. **Sidebar information architecture** — adopt
+- Overview / Boards / Skills / Admin split with role-based visibility.
+
+7. **System health badge in shell** — adopt
+- Always-visible status indicator (`operational/degraded/unknown`).
+
+8. **Do not copy visual stack details verbatim** — not adopted
+- Keep existing OpenRook UI framework choices; reuse UX patterns + object model only.
+
 ## Phase plan with acceptance evidence
 
 ### Phase 1 — Governance + evidence (Priority: P0)
