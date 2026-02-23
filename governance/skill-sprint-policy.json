@@ -10,7 +10,11 @@
     "detect_policy_drift": true,
     "queue_artifact_remediation_on_deficit": true,
     "queue_specialization_debt_remediation": true,
-    "specialization_debt_threshold": 3
+    "specialization_debt_threshold": 3,
+    "require_task_preflight": true,
+    "predictive_blocker_register": true,
+    "validator_priority_for_specialization_remediation": true,
+    "weekly_policy_control_audit": true
   },
   "core_agents": [
     "guardian-2.0",
