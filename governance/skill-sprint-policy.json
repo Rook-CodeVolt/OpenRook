@@ -17,7 +17,8 @@
     "weekly_policy_control_audit": true,
     "two_tier_model_routing": true,
     "adaptive_lesson_planning": true,
-    "openclaw_update_watch": true
+    "openclaw_update_watch": true,
+    "operator_notification_contract": true
   },
   "adaptive_learning": {
     "lesson_planner_model_alias": "QwenCoder7B-Ops",
