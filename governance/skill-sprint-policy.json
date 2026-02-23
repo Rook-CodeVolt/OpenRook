@@ -1,0 +1,42 @@
+{
+  "version": "1.3",
+  "mode": "active",
+  "continuous_mode": true,
+  "daily_task_quota_per_agent": 2,
+  "daily_artifact_quota_per_agent": 1,
+  "idle_challenge_minutes": 20,
+  "specialization_credit_gate": {
+    "enabled": true,
+    "requires_role_aligned_artifact": true,
+    "requires_validation_pass": true
+  },
+  "specialization_debt": {
+    "enabled": true,
+    "threshold_repeated_relevant_tasks_without_growth": 3,
+    "auto_remediation_task": true
+  },
+  "metrics_split": {
+    "enabled": true,
+    "dimensions": ["general_learning", "specialized_learning"]
+  },
+  "validation_packs": {
+    "enabled": true,
+    "initial_roles": ["sentinel-2.0", "api-1", "data-1"],
+    "promotion_block_on_fail": true
+  },
+  "core_agents": [
+    "guardian-2.0",
+    "researcher-2.0",
+    "sentinel-2.0",
+    "mentor-2.0",
+    "evolutionist-2.0",
+    "validator-2.0",
+    "builder-2.0",
+    "analyst-2.0",
+    "critic-2.0",
+    "architect-2.0",
+    "api-1",
+    "data-1",
+    "ml-specialist-2.0"
+  ]
+}
