@@ -15,7 +15,17 @@
     "predictive_blocker_register": true,
     "validator_priority_for_specialization_remediation": true,
     "weekly_policy_control_audit": true,
-    "two_tier_model_routing": true
+    "two_tier_model_routing": true,
+    "adaptive_lesson_planning": true
+  },
+  "adaptive_learning": {
+    "lesson_planner_model_alias": "QwenCoder7B-Ops",
+    "lesson_planner_model": "lmstudio/qwen2.5-coder-7b-instruct",
+    "executor_model_alias": "QwenCoder32B-Local",
+    "executor_model": "lmstudio/qwen/qwen2.5-coder-32b",
+    "queue_lesson_planning_tasks_on_deficit": true,
+    "priority_signal": "task_deficit_plus_artifact_deficit",
+    "policy": "adaptive-lesson-planner-v1"
   },
   "model_tiering": {
     "planner_model_alias": "QwenCoder7B-Ops",
