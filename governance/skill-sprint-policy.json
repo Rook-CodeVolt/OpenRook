@@ -1,28 +1,16 @@
 {
   "version": "1.3",
+  "source_of_truth": "rook-core-v2/config/skill-sprint-policy.json",
   "mode": "active",
   "continuous_mode": true,
   "daily_task_quota_per_agent": 2,
   "daily_artifact_quota_per_agent": 1,
   "idle_challenge_minutes": 20,
-  "specialization_credit_gate": {
-    "enabled": true,
-    "requires_role_aligned_artifact": true,
-    "requires_validation_pass": true
-  },
-  "specialization_debt": {
-    "enabled": true,
-    "threshold_repeated_relevant_tasks_without_growth": 3,
-    "auto_remediation_task": true
-  },
-  "metrics_split": {
-    "enabled": true,
-    "dimensions": ["general_learning", "specialized_learning"]
-  },
-  "validation_packs": {
-    "enabled": true,
-    "initial_roles": ["sentinel-2.0", "api-1", "data-1"],
-    "promotion_block_on_fail": true
+  "automation": {
+    "detect_policy_drift": true,
+    "queue_artifact_remediation_on_deficit": true,
+    "queue_specialization_debt_remediation": true,
+    "specialization_debt_threshold": 3
   },
   "core_agents": [
     "guardian-2.0",
