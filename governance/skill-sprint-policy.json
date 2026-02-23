@@ -16,7 +16,8 @@
     "validator_priority_for_specialization_remediation": true,
     "weekly_policy_control_audit": true,
     "two_tier_model_routing": true,
-    "adaptive_lesson_planning": true
+    "adaptive_lesson_planning": true,
+    "openclaw_update_watch": true
   },
   "adaptive_learning": {
     "lesson_planner_model_alias": "QwenCoder7B-Ops",
