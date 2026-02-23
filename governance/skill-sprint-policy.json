@@ -14,7 +14,21 @@
     "require_task_preflight": true,
     "predictive_blocker_register": true,
     "validator_priority_for_specialization_remediation": true,
-    "weekly_policy_control_audit": true
+    "weekly_policy_control_audit": true,
+    "two_tier_model_routing": true
+  },
+  "model_tiering": {
+    "planner_model_alias": "QwenCoder7B-Ops",
+    "planner_model": "lmstudio/qwen2.5-coder-7b-instruct",
+    "executor_model_alias": "QwenCoder32B-Local",
+    "executor_model": "lmstudio/qwen/qwen2.5-coder-32b",
+    "default_strategy": "7b_plan_32b_execute",
+    "allow_7b_only_for_low_risk_learning": true,
+    "escalation_triggers": [
+      "risk_level_medium_or_higher",
+      "novel_or_ambiguous_problem",
+      "repeat_validation_failure"
+    ]
   },
   "core_agents": [
     "guardian-2.0",
