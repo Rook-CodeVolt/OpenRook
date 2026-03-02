@@ -3,9 +3,246 @@
   "source_of_truth": "rook-core-v2/config/skill-sprint-policy.json",
   "mode": "active",
   "continuous_mode": true,
-  "daily_task_quota_per_agent": 2,
-  "daily_artifact_quota_per_agent": 1,
+  "daily_task_quota_per_agent": 4,
+  "daily_artifact_quota_per_agent": 2,
   "idle_challenge_minutes": 20,
+  "training_mix": {
+    "enabled": true,
+    "mode": "dual_track",
+    "role_track": {
+      "min_tasks_per_agent_per_day": 2,
+      "target_weight": 0.5
+    },
+    "specialization_track": {
+      "min_tasks_per_agent_per_day": 2,
+      "target_weight": 0.4,
+      "required_outputs": [
+        "specialization_artifact",
+        "transfer_validation_task",
+        "recall_probe_task"
+      ]
+    },
+    "cross_domain_track": {
+      "min_tasks_per_agent_per_day": 0,
+      "target_weight": 0.1
+    }
+  },
+  "brain_orchestration": {
+    "enabled": true,
+    "min_parallel_streams_when_backlog_present": 3,
+    "max_single_stream_stall_minutes": 30,
+    "require_non_training_stream_when_training_active": true,
+    "outstanding_task_staleness_alert_minutes": 120,
+    "proactive_improvement_mode_when_backlog_empty": true,
+    "lane_reservations": {
+      "delivery": {
+        "min_ready_slots": 3,
+        "slo_max_queue_age_minutes": 90,
+        "slo_max_stuck_age_minutes": 120
+      },
+      "training": {
+        "min_ready_slots": 2,
+        "slo_max_queue_age_minutes": 180
+      },
+      "research": {
+        "min_ready_slots": 1,
+        "slo_max_queue_age_minutes": 240
+      }
+    },
+    "change_control": {
+      "closure_state_contract": "docs/operations/CLOSURE_STATE_CONTRACT_2026-02-25.md",
+      "canary_policy": "docs/operations/CANARY_ROLLBACK_CONTROL_POLICY_2026-02-25.md",
+      "canary_max_scope_ratio": 0.2,
+      "rollback_on_two_window_slo_breach": true
+    },
+    "memory_governance": {
+      "retention_policy": "docs/operations/MEMORY_RETENTION_AND_RECALL_POLICY_2026-02-25.md",
+      "tiering": {
+        "hot_ttl_hours": 24,
+        "warm_ttl_days": 30,
+        "cold_archive_days": 90
+      },
+      "required_metadata": [
+        "source",
+        "freshness_ts",
+        "confidence",
+        "scope_acl"
+      ],
+      "high_risk_requires_fresh_trusted_recall": true
+    },
+    "blocker_governance": {
+      "policy": "docs/operations/BLOCKER_OWNER_AND_STOPLOSS_POLICY_2026-02-25.md",
+      "stoploss_windows": 2,
+      "auto_owner_by_class": {
+        "runner_runtime_stability": "builder-2.0",
+        "policy_governance_drift": "validator-2.0",
+        "security_safety_risk": "guardian-2.0",
+        "observability_monitoring_gap": "sentinel-2.0",
+        "learning_quality_regression": "mentor-2.0"
+      }
+    },
+    "metrics_governance": {
+      "policy": "docs/operations/DUAL_HORIZON_METRICS_AND_REGRESSION_POLICY_2026-02-25.md",
+      "required_horizons": [
+        "24h",
+        "7d"
+      ],
+      "optional_horizons": [
+        "30d"
+      ],
+      "regression_pack_required_for_autonomy_promotion": true,
+      "alert_on_short_term_long_term_divergence": true
+    },
+    "task_reliability": {
+      "policy": "docs/operations/TASK_IDEMPOTENCY_AND_REPLAY_SAFETY_POLICY_2026-02-25.md",
+      "require_idempotency_key": true,
+      "duplicate_action_suppression": true,
+      "bounded_retry_with_jitter": true
+    },
+    "worker_control": {
+      "policy": "docs/operations/LEASE_HEARTBEAT_AND_ORPHAN_RECLAIM_POLICY_2026-02-25.md",
+      "lease_ttl_seconds": 120,
+      "heartbeat_interval_seconds": 20,
+      "orphan_reclaim_enabled": true
+    },
+    "operator_controls": {
+      "policy": "docs/operations/OPERATOR_OVERRIDE_AND_INCIDENT_MODE_POLICY_2026-02-25.md",
+      "allow_pause_lane": true,
+      "allow_force_priority": true,
+      "allow_emergency_drain": true,
+      "incident_mode_available": true
+    },
+    "audit_trace": {
+      "policy": "docs/operations/DECISION_TRACE_AUDIT_CHAIN_POLICY_2026-02-25.md",
+      "require_correlation_id": true,
+      "required_fields": [
+        "correlation_id",
+        "task_id",
+        "policy_version",
+        "model_id",
+        "decision_summary",
+        "action_taken",
+        "outcome_ref"
+      ]
+    },
+    "queue_hygiene": {
+      "policy": "docs/operations/DEDUPE_AND_STALE_TASK_HYGIENE_POLICY_2026-02-25.md",
+      "dedupe_before_enqueue": true,
+      "stale_ready_archive_minutes": 240,
+      "stale_stuck_escalation_minutes": 180
+    },
+    "autonomy_promotion": {
+      "policy": "docs/operations/AUTONOMY_PROMOTION_GATE_POLICY_2026-02-25.md",
+      "required_gate_count": 6,
+      "allow_promotion_on_operational_passrate_only": false
+    },
+    "prompt_governance": {
+      "policy": "docs/operations/PROMPT_VERSIONING_AND_COMPATIBILITY_POLICY_2026-02-25.md",
+      "require_prompt_version": true,
+      "require_compatibility_checks": true,
+      "allow_promotion_on_failed_compatibility": false
+    },
+    "regression_governance": {
+      "policy": "docs/operations/ROLE_REGRESSION_PACK_CADENCE_POLICY_2026-02-25.md",
+      "wave1_regression_cadence": "daily",
+      "other_roles_regression_cadence": "3x_weekly"
+    },
+    "source_quality_governance": {
+      "policy": "docs/operations/SOURCE_TRUST_SCORING_AND_INGESTION_POLICY_2026-02-25.md",
+      "require_source_trust_score": true,
+      "require_provenance_metadata": true,
+      "require_corroboration_for_low_trust_high_impact": true
+    },
+    "degraded_mode_governance": {
+      "policy": "docs/operations/DEGRADED_MODE_AND_FALLBACK_ROUTING_POLICY_2026-02-25.md",
+      "allow_low_risk_fallback": true,
+      "queue_high_risk_when_tier_unavailable": true,
+      "require_degraded_mode_signal": true
+    },
+    "control_integrity": {
+      "policy": "docs/operations/CONTROL_INTEGRITY_PANEL_POLICY_2026-02-25.md",
+      "required_indicators": [
+        "runner_health",
+        "lane_slo_status",
+        "evidence_freshness",
+        "drift_rollback_status",
+        "autonomy_gate_status"
+      ]
+    },
+    "prioritization_governance": {
+      "policy": "docs/operations/OUTCOME_WEIGHTED_PRIORITIZATION_POLICY_2026-02-25.md",
+      "strategy": "outcome_weighted",
+      "respect_lane_reservations": true
+    },
+    "approval_governance": {
+      "policy": "docs/operations/HUMAN_APPROVAL_GRANULARITY_POLICY_2026-02-25.md",
+      "matrix_required": true,
+      "require_explicit_approval_for_medium_high_external": true
+    },
+    "checkpoint_governance": {
+      "policy": "docs/operations/INTERRUPT_SAFE_CHECKPOINT_POLICY_2026-02-25.md",
+      "required_for_long_running_streams": true,
+      "checkpoint_interval_minutes": 15
+    },
+    "closure_packet_governance": {
+      "policy": "docs/operations/ARTIFACT_AUTOPACK_AND_CLOSURE_PACKET_POLICY_2026-02-25.md",
+      "require_closure_packet": true,
+      "require_outcome_delta_metrics": true
+    },
+    "action_planning_governance": {
+      "policy": "docs/operations/NEXT_BEST_ACTION_AND_DEPENDENCY_GRAPH_POLICY_2026-02-25.md",
+      "require_ranked_next_actions": true,
+      "require_dependency_context": true
+    },
+    "latency_routing_governance": {
+      "policy": "docs/operations/LATENCY_AWARE_MODEL_ROUTING_POLICY_2026-02-25.md",
+      "enable_latency_aware_tiering": true,
+      "respect_quality_floor": true
+    },
+    "failure_pattern_governance": {
+      "policy": "docs/operations/RECURRING_FAILURE_PATTERN_MINER_POLICY_2026-02-25.md",
+      "enable_recurring_pattern_mining": true,
+      "auto_queue_preventive_actions": true
+    },
+    "improvement_lane_governance": {
+      "policy": "docs/operations/AUTONOMOUS_IMPROVEMENT_BACKLOG_LANE_POLICY_2026-02-25.md",
+      "enable_autonomous_improvement_lane": true,
+      "auto_pause_on_delivery_warning": true
+    },
+    "maintenance_batching_governance": {
+      "policy": "docs/operations/BATCHABLE_MAINTENANCE_WINDOW_POLICY_2026-02-25.md",
+      "enable_batchable_windows": true,
+      "reserve_prime_window_for_delivery": true
+    },
+    "confidence_governance": {
+      "policy": "docs/operations/CONFIDENCE_BANDED_STATUS_POLICY_2026-02-25.md",
+      "require_confidence_band": true,
+      "block_binary_green_on_low_confidence": true
+    },
+    "handoff_governance": {
+      "policy": "docs/operations/HANDOFF_CONTRACT_STANDARDIZATION_POLICY_2026-02-25.md",
+      "require_standard_handoff_schema": true,
+      "reject_incomplete_handoffs": true
+    },
+    "recovery_drill_governance": {
+      "policy": "docs/operations/RECOVERY_GAMEDAY_CADENCE_POLICY_2026-02-25.md",
+      "weekly_lightweight_drill": true,
+      "monthly_full_restore_simulation": true,
+      "block_autonomy_claims_on_critical_dr_failures": true
+    },
+    "output_action_outcome_governance": {
+      "policy": "docs/operations/OUTPUT_ACTION_OUTCOME_ENFORCEMENT_POLICY_2026-02-25.md",
+      "require_complete_chain_for_full_credit": true,
+      "deweight_meta_credit_when_chain_missing": true,
+      "require_repeated_complete_chain_for_autonomy_claims": true
+    },
+    "improvement_focus_areas": [
+      "platform_friction_reduction",
+      "communications_quality",
+      "tooling_configuration",
+      "capability_expansion"
+    ]
+  },
   "automation": {
     "detect_policy_drift": true,
     "queue_artifact_remediation_on_deficit": true,
@@ -18,16 +255,59 @@
     "two_tier_model_routing": true,
     "adaptive_lesson_planning": true,
     "openclaw_update_watch": true,
-    "operator_notification_contract": true
+    "operator_notification_contract": true,
+    "core_adaptive_learning_required": true,
+    "baseline_learning_health_gate": true,
+    "mentor_curriculum_gate": true,
+    "non_blocking_execution_default": true,
+    "auto_resume_primary_after_blocker": true,
+    "runner_resilience_guard": true,
+    "enforce_dual_track_learning_mix": true,
+    "throttle_training_when_delivery_open": false,
+    "automation_chain_only_mode": false
   },
   "adaptive_learning": {
+    "policy": "core-adaptive-learning-contract-v1",
+    "baseline_learning_required_before_specialization": true,
+    "research_support_loop": {
+      "enabled": true,
+      "owner_agent": "researcher-2.0",
+      "scope": [
+        "system",
+        "operator",
+        "agents",
+        "brain"
+      ],
+      "max_research_tasks_per_cycle": 1,
+      "requires_actionable_output": true,
+      "research_is_supporting_role": true
+    },
+    "mentor_curriculum_gate": {
+      "enabled": true,
+      "max_lessons_per_cycle": 3,
+      "min_role_specific_lessons": 2,
+      "generic_lesson_allowlist": [
+        "role_specific_skill_gap_analysis",
+        "artifact_quality_upgrade",
+        "validation_pack_practice"
+      ],
+      "rewrite_owner_agent": "mentor-2.0"
+    },
+    "baseline_skill_threshold_gate": {
+      "enabled": true,
+      "min_validated_events_per_agent": 6,
+      "min_effective_events_per_agent": 3,
+      "min_distinct_skill_pairs_per_agent": 3,
+      "allow_manual_override": false
+    },
     "lesson_planner_model_alias": "QwenCoder7B-Ops",
     "lesson_planner_model": "lmstudio/qwen2.5-coder-7b-instruct",
     "executor_model_alias": "QwenCoder32B-Local",
     "executor_model": "lmstudio/qwen/qwen2.5-coder-32b",
     "queue_lesson_planning_tasks_on_deficit": true,
     "priority_signal": "task_deficit_plus_artifact_deficit",
-    "policy": "adaptive-lesson-planner-v1"
+    "stalled_credit_alert_minutes": 90,
+    "new_agent_bootstrap_includes_baseline_learning": true
   },
   "model_tiering": {
     "planner_model_alias": "QwenCoder7B-Ops",
@@ -53,8 +333,8 @@
     "analyst-2.0",
     "critic-2.0",
     "architect-2.0",
-    "api-1",
-    "data-1",
+    "api-specialist-2.0",
+    "data-specialist-2.0",
     "ml-specialist-2.0"
   ]
 }
